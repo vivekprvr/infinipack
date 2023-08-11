@@ -18,27 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
 
-    // SplitText animation
-    gsap.registerPlugin(SplitText);
-    const mySplitText = new SplitText(".quote", { type: "words,chars" });
-    const chars = mySplitText.chars;
-
-    gsap.set(".quote", { perspective: 400 });
-
-    const tl = gsap.timeline();
-    tl.from(chars, {
-      duration: 1,
-      opacity: 0,
-      scale: 0,
-      y: 80,
-      rotationX: 180,
-      transformOrigin: "0% 50% -50",
-      ease: "back",
-      stagger: 0.01,
-      delay: 1
-    });
-
-    // Onload animation using GSAP
+     // Onload animation using GSAP
     gsap.from(animateOnloadFromTop, {
       opacity: 0,
       y: -100,
