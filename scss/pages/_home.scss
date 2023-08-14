@@ -224,7 +224,7 @@
 
     .main-section {
         padding: 48px 0;
-        min-height: 100vh;
+        min-height: inherit;
         height: inherit;
     }
 
@@ -233,7 +233,7 @@
     }
 
     .main-footer {
-        padding: 24px 0 100px 0;
+        padding: 24px 0 50px 0;
     }
 }
 
@@ -246,6 +246,10 @@
         height: 100%;
         gap: 4px;
         padding: 4px;
+    }
+
+    .main-heading-container h5 {
+        font-size: 16px !important;
     }
 }
 
