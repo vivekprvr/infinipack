@@ -1,0 +1,70 @@
+.sub-page-banner {
+    height: 420px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.sub-page-head-text-wrapper {
+    display: grid;
+    align-content: end;
+    height: 100%;
+}
+
+
+.sub-page-head-text {
+    display: grid;
+    justify-content: start;
+    justify-items: start;
+    gap: 4px;
+
+    h3 {
+        border-radius: 4px;
+        margin-bottom: 0;
+    }
+}
+
+.about-section-two {
+    display: grid;
+    grid-template-columns: minmax(0, 800px) 1fr;
+    background: var(--bs-primary);
+}
+
+.about-section-stwo-content {
+    max-width: 960px;
+    padding: 100px 40px;
+}
+
+.about-core-value-img {
+    background-image: url('../../img/about-core-value.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-team-wrapper {
+    padding: 100px 0 200px 0;
+    background: #FFF9F2;
+}
+
+.outer-wrapper {
+    padding: 100px 0;
+}
+
+.avatar-team {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100px;
+    background: #fff;
+}
+
+.outer-wrapper-above-contact {
+    padding: 100px 0 200px 0;
+}
+
+.contact-container {
+    display: grid;
+    justify-content: center;
+    grid-auto-flow: column;
+    justify-items: center;
+    gap: 24px;
+}

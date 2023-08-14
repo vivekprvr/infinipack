@@ -47,4 +47,16 @@
             }
         }
     }
+
+    &.menu-mob {
+        grid-auto-flow: row;
+        text-align: center;
+        li {
+            list-style: none;
+            a {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+    }
 }

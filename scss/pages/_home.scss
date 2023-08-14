@@ -154,24 +154,49 @@
     justify-items: start;
 }
 
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .main-heading {
+        font-size: 26px;
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .main-heading {
+        font-size: 36px;
+    }
+
+    .main-sub-heading {
+        font-size: 18px !important;
+    }
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .main-heading {
+        font-size: 40px;
+    }
+
+    .main-sub-heading {
+        font-size: 18px !important;
+    }
+}
 
 
 @media (max-width:992px) {
     :root {
         --outer-padding: 16px;
     }
-    .main-heading {
-        font-size: 30px;
-    }
-
-    .main-sub-heading {
-        font-size: 16px !important;
-    }
 
     .logo {
         img {
-            height: 32px;
+            height: 40px;
         }
+    }
+
+    .home-banner {
+        height: inherit;
     }
 
     .contact-panel-inner {
@@ -211,6 +236,7 @@
         padding: 24px 0 100px 0;
     }
 }
+
 
 @media (max-width: 768px) {
     .banner-img {
