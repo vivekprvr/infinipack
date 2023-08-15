@@ -23,9 +23,9 @@
         list-style: none;
 
         a {
-            color: var(--bs-grey-800);
-            font-size: 16px;
-            font-weight: 500;
+            color: var(--bs-grey-900);
+            font-size: 18px;
+            font-weight: 600;
             text-decoration: none;
 
             &:hover {
@@ -35,6 +35,17 @@
 
         &.active {
             color: var(--bs-secondary);
+        }
+
+        &.disabled {
+            a {
+                cursor: inherit;
+                opacity: 0.6;
+
+                &:hover {
+                    color: inherit;
+                }
+            }
         }
     }
 

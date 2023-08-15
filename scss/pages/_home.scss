@@ -69,15 +69,10 @@
 }
 
 // section 3
-
-.s3-img-1 {
-    margin-top: -350px;
-}
-
 .section-three {
-    margin-top: 100px;
-    padding-top: 50px;
+    padding: 100px 0;
 }
+
 .s3-text {
     position: absolute;
     top: -200px;
@@ -236,18 +231,10 @@
         }
     }
 
-    .s3-img-1 {
-        margin: 0;
-    }
-
     .main-section {
         padding: 48px 0;
         min-height: inherit;
         height: inherit;
-    }
-
-    .section-three {
-        margin-top: 0;
     }
 
     .main-footer {
