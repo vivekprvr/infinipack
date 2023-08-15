@@ -16,7 +16,7 @@
 
 .banner-logo-mark {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 10%;
     left: 0;
     z-index: -1;
@@ -166,6 +166,33 @@
     gap: 16px;
     justify-items: start;
 }
+
+.s-item-inner {
+    background: var(--bs-gray-200);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.contact-img {
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.contact-content {
+    background: var(--bs-gray-100);
+    padding: 48px 48px 200px;
+}
+
 
 // `sm` applies to x-small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
