@@ -199,6 +199,10 @@
     .main-heading {
         font-size: 26px;
     }
+
+    .highlight-mark {
+        display: none;
+    }
 }
 
 // `md` applies to small devices (landscape phones, less than 768px)
@@ -267,6 +271,14 @@
     .main-footer {
         padding: 24px 0 50px 0;
     }
+
+    .main-header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .section-three {
+        padding: 48px 0;
+    }
 }
 
 
@@ -274,7 +286,7 @@
     .banner-img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         height: 100%;
         gap: 4px;
         padding: 4px;
@@ -282,6 +294,30 @@
 
     .main-heading-container h5 {
         font-size: 16px !important;
+    }
+
+    .highlight-line {
+        bottom: -12px;
+    }
+
+    .hb-img-5 {
+        display: none;
+    }
+
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+    }
+
+    .contact-content {
+        padding: 48px 16px;
+    }
+
+    .footer-logo {
+        img {
+            width: 120px;
+        }
     }
 }
 
