@@ -1223,6 +1223,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   width: 100%;
 }
 
+.w-max-1280 {
+  max-width: 1280px;
+  width: 100%;
+}
+
 .w-1280 {
   display: grid;
   grid-template-columns: minmax(0, 1280px);
@@ -1412,16 +1417,20 @@ body {
 .s3-dots-1 {
   z-index: -1;
   position: absolute;
-  left: 23px;
+  left: -70px;
   bottom: -25%;
 }
 
 .s3-dots-2 {
   z-index: -1;
   position: absolute;
-  left: -25px;
-  bottom: -25%;
+  right: -50px;
+  bottom: 35%;
   transform: rotate(90deg) !important;
+}
+
+.bg-secondary-100 {
+  background: #CBE1FC;
 }
 
 .icon-container {

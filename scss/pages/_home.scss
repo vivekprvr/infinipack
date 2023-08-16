@@ -90,18 +90,21 @@
 .s3-dots-1 {
     z-index: -1;
     position: absolute;
-    left: 23px;
+    left: -70px;
     bottom: -25%;
 }
 
 .s3-dots-2 {
     z-index: -1;
     position: absolute;
-    left: -25px;
-    bottom: -25%;
+    right: -50px;
+    bottom: 35%;
     transform: rotate(90deg) !important;
 }
 
+.bg-secondary-100 {
+    background: #CBE1FC;
+}
 // section 4
 
 .icon-container {
