@@ -374,6 +374,11 @@ body {
   height: 58px;
 }
 
+.ic-100 {
+  width: 130px;
+  height: 130px;
+}
+
 .g-col {
   display: grid;
   grid-auto-flow: column;
@@ -1499,7 +1504,7 @@ body {
 
 .contact-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr minmax(0, 800px);
 }
 
 .contact-img {
@@ -1644,7 +1649,7 @@ body {
 
 .about-section-two {
   display: grid;
-  grid-template-columns: minmax(0, 800px) 1fr;
+  grid-template-columns: 1fr minmax(0, 900px);
   background: var(--bs-primary);
 }
 

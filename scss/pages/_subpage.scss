@@ -25,7 +25,7 @@
 
 .about-section-two {
     display: grid;
-    grid-template-columns: minmax(0, 800px) 1fr;
+    grid-template-columns: 1fr minmax(0, 900px);
     background: var(--bs-primary);
 }
 
