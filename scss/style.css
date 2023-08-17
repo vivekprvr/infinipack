@@ -1623,6 +1623,29 @@ body {
     padding: 4px;
   }
 }
+.coming-soon {
+  display: grid;
+  height: 100vh;
+  align-content: center;
+  align-items: center;
+}
+.coming-soon .logo {
+  max-width: 280px;
+  display: grid;
+  width: 100%;
+}
+
+.ss-inner {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 24px;
+  max-width: 800px;
+  width: 100%;
+  margin: auto;
+  justify-items: center;
+  gap: 32px;
+}
+
 .sub-page-banner {
   height: 420px;
   background-size: cover;
