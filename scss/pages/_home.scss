@@ -177,6 +177,10 @@
     height: 100%;
 }
 
+.bg-founders {
+    background: var(--bs-gray-200);
+}
+
 
 .contact-section {
     display: grid;
@@ -227,6 +231,24 @@
 
     .main-sub-heading {
         font-size: 18px !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .contact-section {
+        display: grid;
+        grid-template-columns: 1fr minmax(0, 480px);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .contact-panel {
+        border-radius: 30px;
+        padding: 36px 48px;
+    }
+
+    .contact-panel-inner {
+        padding-right: 450px;
     }
 }
 
@@ -282,6 +304,10 @@
     .section-three {
         padding: 48px 0;
     }
+
+    .s3-dots-1, .s3-dots-2 {
+        display: none;
+    }
 }
 
 
@@ -327,7 +353,7 @@
 @media (min-width: 769px) {
     .banner-img {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         height: 100%;
         gap: 4px;
         padding: 4px;
