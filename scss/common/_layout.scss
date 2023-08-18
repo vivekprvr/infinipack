@@ -6,8 +6,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 32px;
-    padding: 24px var(--outer-padding);
-    align-items: center;
+    padding: 12px var(--outer-padding);
 }
 
 .menu {
@@ -30,11 +29,11 @@
             &:hover {
                 color: var(--bs-secondary);
             }
+            &.active {
+                color: var(--bs-secondary);
+            }
         }
 
-        &.active {
-            color: var(--bs-secondary);
-        }
 
         &.disabled {
             a {

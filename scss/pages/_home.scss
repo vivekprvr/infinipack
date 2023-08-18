@@ -1,7 +1,7 @@
 .home-banner {
     display: grid;
-    grid-template-rows: auto 1fr minmax(0,360px);
-    height: 100vh;
+    grid-template-rows:1fr minmax(0,360px);
+    height: calc( 100vh - 70px);
     align-items: center;
     min-height: 800px;
 }
@@ -12,6 +12,7 @@
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .banner-logo-mark {
@@ -68,10 +69,11 @@
     height: 100vh;
 }
 
-// section 3
-.section-three {
-    padding: 100px 0;
+.section-scroll {
+    padding: 140px 0;
 }
+
+// section 3
 
 .s3-text {
     position: absolute;
@@ -172,9 +174,21 @@
 
 .s-item-inner {
     background: var(--bs-gray-200);
-    border-radius: 8px;
+    border-radius: 20px;
     overflow: hidden;
     height: 100%;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+}
+
+.s-item-inner-img {
+    img {
+        object-fit: cover;
+        background-size: cover;
+        height: 100%;
+        background-position: center;
+        width: 100%;
+    }
 }
 
 .bg-founders {
@@ -197,7 +211,7 @@
 
 .contact-content {
     background: var(--bs-gray-100);
-    padding: 48px 48px 200px;
+    padding: 148px 48px 300px;
 }
 
 

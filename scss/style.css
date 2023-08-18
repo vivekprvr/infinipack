@@ -23,8 +23,7 @@ body {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 32px;
-  padding: 24px var(--outer-padding);
-  align-items: center;
+  padding: 12px var(--outer-padding);
 }
 
 .menu {
@@ -47,7 +46,7 @@ body {
 .menu li a:hover {
   color: var(--bs-secondary);
 }
-.menu li.active {
+.menu li a.active {
   color: var(--bs-secondary);
 }
 .menu li.disabled a {
@@ -1339,8 +1338,8 @@ body {
 
 .home-banner {
   display: grid;
-  grid-template-rows: auto 1fr minmax(0, 360px);
-  height: 100vh;
+  grid-template-rows: 1fr minmax(0, 360px);
+  height: calc(100vh - 70px);
   align-items: center;
   min-height: 800px;
 }
@@ -1352,6 +1351,7 @@ body {
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner-logo-mark {
@@ -1401,8 +1401,8 @@ body {
   height: 100vh;
 }
 
-.section-three {
-  padding: 100px 0;
+.section-scroll {
+  padding: 140px 0;
 }
 
 .s3-text {
@@ -1496,9 +1496,20 @@ body {
 
 .s-item-inner {
   background: var(--bs-gray-200);
-  border-radius: 8px;
+  border-radius: 20px;
   overflow: hidden;
   height: 100%;
+  display: grid;
+  grid-template-rows: 200px 1fr;
+}
+
+.s-item-inner-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  width: 100%;
 }
 
 .bg-founders {
@@ -1520,7 +1531,7 @@ body {
 
 .contact-content {
   background: var(--bs-gray-100);
-  padding: 48px 48px 200px;
+  padding: 148px 48px 300px;
 }
 
 @media (max-width: 575.98px) {

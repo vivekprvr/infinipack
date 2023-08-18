@@ -21,33 +21,33 @@
 </head>
 
 <body data-module-load>
+    <div class="sticky-top bg-white">
+        <header class="main-header animate-onload-from-top">
+            <a class="logo nav-link" href="#section0">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <div class="pt-2 d-none d-lg-block">
+                <ul class="menu">
+                    <li><a class="nav-link" href="#section1">Solutions</a></li>
+                    <li><a class="nav-link" href="#section2">About</a></li>
+                    <li><a class="nav-link" href="#Contact">Contact</a></li>
+                    <li class="disabled"><a class="nav-link">Career</a></li>
+                </ul>
+            </div>
+            <div class="d-grid d-lg-none justify-content-end">
+                <button class="btn" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    <svg class="ic-28">
+                        <use xlink:href="img/icon_sprite.svg#ic-menu" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+    <!-- end header -->
     <div data-load-container>
         <div data-module-scroll="main">
-            <section class="home-banner">
-                <div class="container container-xxl" data-scroll data-scroll-speed="0.2">
-                    <header class="main-header animate-onload-from-top">
-                        <a class="logo" href="index.html">
-                            <img src="img/logo.svg" alt="">
-                        </a>
-                        <div class="pt-2 d-none d-lg-block">
-                            <ul class="menu">
-                                <li><a class="nav-link" href="#section1">Solutions</a></li>
-                                <li><a class="nav-link" href="#section2">About</a></li>
-                                <li><a class="nav-link" href="#Contact">Contact</a></li>
-                                <li class="disabled"><a class="nav-link">Career</a></li>
-                            </ul>
-                        </div>
-                        <div class="d-grid d-lg-none justify-content-end">
-                            <button class="btn" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <svg class="ic-28">
-                                    <use xlink:href="img/icon_sprite.svg#ic-menu" />
-                                </svg>
-                            </button>
-                        </div>
-                    </header>
-                </div>
-                <!-- end header -->
+            <section class="home-banner section" id="section0">
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header d-grid justify-content-end">
@@ -93,25 +93,23 @@
             </section>
             <!-- /home-banner -->
 
-            <section class="outer-wrapper" id="section1">
+            <section class="section-scroll section" id="section1">
                 <div class="container">
-                    <div class="w-max-900 mx-auto" data-scroll data-scroll-speed=".1">
-                        <h1 class="text-center text-secondary">
+                    <div class="w-max-1280 mx-auto lp-n1" data-scroll data-scroll-speed=".1">
+                        <h1 class="text-center text-secondary font-2">
                             Are you an enterprise which is a fabless venture, a startup, an IDM, or an IP Developer in
                             search of cutting-edge solutions for your semiconductor packaging and systems?
                         </h1>
-                        <h5 class="text-center text-gray-700 pb-5 pt-2" data-scroll>
-                            in search of premier, cutting-edge solutions for your semiconductor packaging and system
-                            necessities?
-                        </h5>
-                        <h4 class="font-2 text-center" data-scroll>
+                        <h2 class="font-2 text-center pt-5 pb-3" data-scroll>
                             Explore our solutions
-                        </h4>
+                        </h2>
                     </div>
                     <div class="row pb-5 align-content-stretch">
                         <div class="col-sm-3 col-md-6 col-lg-3 text-center" data-scroll data-scroll-speed=".1">
                             <div class="s-item-inner">
-                                <img class="img-fluid rounded-1" src="img/solution-1.png" alt="">
+                                <div class="s-item-inner-img">
+                                    <img class="img-fluid" src="img/solution-1.jpg" alt="">
+                                </div>
                                 <div class="px-2 py-4">
                                     <h6 class="text-secondary fw-medium text-center">Architect and Design Packaging Solutions</h6>
                                     <p class="pt-1 text-center f-14"> End-to-end innovative packaging
@@ -122,7 +120,9 @@
                         </div>
                         <div class="col-sm-3 col-md-6 col-lg-3 text-center" data-scroll data-scroll-speed=".1">
                             <div class="s-item-inner">
-                                <img class="img-fluid rounded-1" src="img/solution-2.png" alt="">
+                                <div class="s-item-inner-img">
+                                    <img class="img-fluid" src="img/solution-2.jpg" alt="">
+                                </div>
                                 <div class="px-2 py-4">
                                     <h6 class="text-secondary fw-medium text-center">Total System Design Solutions</h6>
                                     <p class="pt-1 text-center f-14"> Complete system form factor and
@@ -134,7 +134,9 @@
                         </div>
                         <div class="col-sm-3 col-md-6 col-lg-3 text-center" data-scroll data-scroll-speed=".1">
                             <div class="s-item-inner">
-                                <img class="img-fluid rounded-1" src="img/solution-3.png" alt="">
+                                <div class="s-item-inner-img">
+                                    <img class="img-fluid" src="img/solution-3.jpg" alt="">
+                                </div>
                                 <div class="px-2 py-4">
                                     <h6 class="text-secondary fw-medium text-center">Building Products</h6>
                                     <p class="pt-1 text-center f-14">Embarking on building a strong
@@ -145,14 +147,12 @@
                         </div>
                         <div class="col-sm-3 col-md-6 col-lg-3 text-center" data-scroll data-scroll-speed=".1">
                             <div class="s-item-inner">
-                                <img class="img-fluid rounded-1" src="img/solution-4.png" alt="">
+                                <div class="s-item-inner-img">
+                                    <img class="img-fluid" src="img/solution-4.jpg" alt="">
+                                </div>
                                 <div class="px-2 py-4">
                                     <h6 class="text-secondary fw-medium text-center">Consulting</h6>
-                                    <p class="pt-1 text-center f-14">Consultation regarding the
-                                        advancement of ecosystems,
-                                        encompassing OSAT/ATMP, along
-                                        with collaborations in research and
-                                        technology
+                                    <p class="pt-1 text-center f-14">Consultation for OSAT/ATMP set-up for joint ventures or sole ownership business enterprises
                                 </div>
                             </div>
                         </div>
@@ -165,263 +165,286 @@
             </section>
             <!-- /section two -->
 
-            <section class="bg-founders section-three" data-scroll id="section2">
-                <h2 class="font-2 text-center " data-scroll data-scroll-speed=".08">Founders</h2>
-                 <div class="container">
-                    <div class="row justify-content-center" data-scroll data-scroll-speed=".2">
-                        <div class="col-sm-6 col-lg-3 position-relative py-4">
-                            <img class="img-fluid s3-img-1 rounded-4" src="img/suresh.png" alt="Suresh">
-                            <img class="s3-dots-1" src="img/dots.svg" alt="image" data-scroll data-scroll-speed=".1">
+            <section class="section" data-scroll id="section2">
+                <section class="bg-founders section-scroll">
+                    <h2 class="font-2 text-center " data-scroll data-scroll-speed=".08">Founders</h2>
+                     <div class="container">
+                        <div class="row justify-content-center" data-scroll data-scroll-speed=".2">
+                            <div class="col-sm-6 col-lg-3 py-4 position-relative">
+                                <img class="img-fluid s3-img-1 rounded-4" src="img/SLN-Murthy.png" alt="SLN Murthy">
+                                <!-- <img class="s3-dots-2" src="img/dots.svg" alt="image" data-scroll  data-scroll-speed=".2"> -->
+                            </div>
+                            <div class="col-sm-6 col-lg-7 order-1 order-lg-0 position-relative">
+                                <div>
+                                    <h5 class="pt-4 fw-medium">SLN Murthy</h5>
+                                    <span class="fw-medium f-15 text-gray-700">CEO</span>
+                                    <p class="pt-3 lh-26">
+                                        SLN Murthy was the pioneer behind India's very first CAD-based center for PCBs and played a crucial role in the country's
+                                        defense and missile program. After spending more than a decade at Bharat Electronics, he took on the challenge of a startup
+                                        with an entrepreneurial spirit. This journey led him to establish a successful startup in the semiconductor and system
+                                        design domains which was acquired by a European conglomerate. With over 50 years of experience in the industry, SLN Murthy's passion is to develop new generation professionals and trained over 4000 engineers since 2000 in building the trained resource pool for multi nationals and defense R&D groups. He has conducted over 150 training programs to Space, Defense and Telecom, Automotive sectors on SI and PI. He has been a founding member of IEEE-EPS, Technical Advisor –IPC, Senior Member IEEE and has been on committees of many international and National conferences and workshops. Currently, SLN Murthy is Co-Founder and VP of a product company with 3 patents pending. He's also actively involved in guest lecturing at universities, sharing his knowledge about Signal Integrity and educating young minds.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6 col-lg-6 position-relative">
-                               <div>
-                                <h3 class="pt-4">Suresh Subramanyam</h3>
-                                <p class="pt-1 fw-light lh-26">
-                                    Suresh’s dream to establish Semiconductor Packaging Development capabilities in India was realized about 2 decades back.
-                                    After spending 8 years in Singapore, he returned to India in 2003, starting the first multi-disciplined team at Intel India, hiring
-                                    engineers from the US and India. For nearly 20 years at Intel India, Suresh led the way, forming, and guiding multiple teams.
-                                    His efforts laid a strong foundation for Packaging Development expertise across various divisions in India. He played a pivotal
-                                    role in bringing about more than 25 successful package tape-outs for CPUs, GPUs, and Northbridge/Gfx Chipsets.
+                        <div class="row justify-content-center" data-scroll data-scroll-speed=".2">
+                            <div class="col-sm-6 col-lg-7 position-relative">
+                                <div>
+                                    <h5 class="pt-4 fw-medium">Suresh Subramanyam</h5>
+                                    <span class="fw-medium f-15 text-gray-700">CTO</span>
+                                    <p class="pt-3 fw-light lh-26">
+                                        Suresh’s dream to establish Semiconductor Packaging Development capabilities in India was realized about 2 decades back.
+                                        After spending 8 years in Singapore, he returned to India in 2003, starting the first multi-disciplined team at Intel India, hiring
+                                        engineers from the US and India. For nearly 20 years at Intel India, Suresh led the way, forming, and guiding multiple teams.
+                                        His efforts laid a strong foundation for Packaging Development expertise across various divisions in India. He played a pivotal
+                                        role in bringing about more than 25 successful package tape-outs for CPUs, GPUs, and Northbridge/Gfx Chipsets.
+                                    </p>
+                                    <p class="pt-2 fw-light lh-26">
+                                        Notably, in 2004, he co-founded the IEEE-EPS Bangalore Chapter, showcasing his visionary zeal and commitment to the field.
+                                        From 2016 to 2018, he served on the Board of Governors Council of the IEEE-Electronics Packaging Society, USA. With
+                                        broad experience in high-volume manufacturing, packaging technology development, architectural definition, design,
+                                        assembly tooling, PCB and systems design, and organizational growth, Suresh's vision to lead research and development
+                                        efforts in collaboration with academia and premier research institutions, globally, began to take shape.
+                                    </p>
+                             </div>
+                         </div>
+                            <div class="col-sm-6 col-lg-3 position-relative py-4">
+                                <img class="img-fluid s3-img-1 rounded-4" src="img/suresh.png" alt="Suresh">
+                                <!-- <img class="s3-dots-1" src="img/dots.svg" alt="image" data-scroll data-scroll-speed=".1"> -->
+                            </div>
+                        </div>
+                        <div class="row justify-content-center" data-scroll data-scroll-speed=".2">
+                            <div class="col-sm-6 col-lg-3 py-4 position-relative">
+                                <img class="img-fluid s3-img-1 rounded-4" src="img/sathisha.png" alt="sathisha">
+                                <!-- <img class="s3-dots-2" src="img/dots.svg" alt="image" data-scroll  data-scroll-speed=".2"> -->
+                            </div>
+                            <div class="col-sm-6 col-lg-7 order-1 order-lg-0 position-relative">
+                                <div>
+                                    <h5 class="pt-4 fw-medium">Satisha Naraharimurthy</h5>
+                                    <span class="fw-medium f-15 text-gray-700">COO</span>
+                                    <p class="pt-3 lh-26">
+                                        Satisha Naraharimurthy is an accomplished entrepreneur with 20+ years of experience in varied leadership roles with NichePro Technologies, NetZealous LLC, and several other ventures. His entrepreneurial journey began with Comcast Solutions, focusing on high end IT corporate training and Technical recruitment for several multinational product based captive centre’s. He founded NichePro Technologies, offering IT services and solutions, before its acquisition by TeamLease Services. He leads NetZealous, providing professional training in regulatory compliance, HR, healthcare, and IT and it made pioneer in the North American market.
+
+                                    </p>
+                                    <p class="pt-1 lh-26">
+                                        As an angel investor he supports entrepreneurship by investing into several high end technology companies like  Virtulive Technologies, offering innovative collaboration solutions, Cloudcollab Technologies, an niche IT services provider with Infinipack being the latest in his quest for high growth, new age ventures. Satisha's journey reflects his commitment to entrepreneurship and professional growth and he continues to promote, invest and mentor start ups across diverse industries
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-max-1280 mx-auto">
+                        <h4 class="text-center pt-2 pt-lg-5 font-3 px-1 px-lg-4 lh-36 " data-scroll data-scroll-speed=".08">
+                            In recent years, Heterogeneous Integration and Advanced Packaging started to become prominent in
+                            the era of Chiplets. To drive the global semiconductor industry forward the trio decided to lead the
+                            way for India with simple yet powerful goal: to create a hub that could nurture top-notch talent in
+                            advanced packaging and systems engineering, enriching the entire ecosystem. That’s how Infinipack
+                            started its journey.
+                        </h4>
+                    </div>
+                </section>
+
+                <section class="outer-wrapper bg-body">
+                    <div class="container">
+                        <h2 class="font-2 text-center lp-n2" data-scroll data-scroll-speed=".09">
+                            Our Ethos
+                        </h2>
+                        <div class="row pb-5 pt-5">
+                            <div class="col-md-4 text-center" data-scroll data-scroll-speed=".1">
+                                <svg class="ic-100">
+                                    <use xlink:href="img/icon_sprite.svg#ic-eye" />
+                                </svg>
+                                <h4 class="text-secondary pt-3">Vision</h4>
+                                <p class="pt-1 px-2">India’s pioneer in Advanced
+                                    Semiconductor Packaging and
+                                    Systems - Technology Development
+                                    and Design Engineering; catalyzing
+                                    businesses to develop leading-edge
+                                    products.
                                 </p>
-                                <p class="pt-2 fw-light lh-26">
-                                    Notably, in 2004, he co-founded the IEEE-EPS Bangalore Chapter, showcasing his visionary zeal and commitment to the field.
-                                    From 2016 to 2018, he served on the Board of Governors Council of the IEEE-Electronics Packaging Society, USA. With
-                                    broad experience in high-volume manufacturing, packaging technology development, architectural definition, design,
-                                    assembly tooling, PCB and systems design, and organizational growth, Suresh's vision to lead research and development
-                                    efforts in collaboration with academia and premier research institutions, globally, began to take shape.
+                            </div>
+                            <div class="col-md-4 text-center" data-scroll data-scroll-speed=".14">
+                                <svg class="ic-100">
+                                    <use xlink:href="img/icon_sprite.svg#ic-target" />
+                                </svg>
+                                <h4 class="text-secondary pt-3">Mission</h4>
+                                <p class="pt-1 px-2"> Collaborate from Architecture
+                                    phase to accelerate Product
+                                    Development, to deliver
+                                    performance and cost optimal
+                                    solutions to semiconductor and
+                                    system companies.
+                                </p>
+                            </div>
+                            <div class="col-md-4 text-center" data-scroll data-scroll-speed=".18">
+                                <svg class="ic-100">
+                                    <use xlink:href="img/icon_sprite.svg#ic-purpuse" />
+                                </svg>
+                                <h5 class="text-secondary pt-3">Purpose</h5>
+                                <p class="pt-1 px-2">
+                                    A platform that empowers
+                                    the ecosystem with
+                                    world-class advanced
+                                    packaging and systems
+                                    engineering talent in the
+                                    Chiplets era.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center" data-scroll data-scroll-speed=".2">
-                        <div class="col-sm-6 col-lg-6 order-1 order-lg-0 position-relative">
-                            <div>
-                                <h3 class="">SLN Murthy</h3>
-                                <p class="pt-1 lh-26">SLN Murthy was the pioneer behind India's very first CAD-based center for PCBs and played a crucial role in the country's defense program. After spending more than a decade at BHEL, he took on the challenge of a startup with an entrepreneurial spirit. This journey led him to establish several successful startups in the semiconductor field. With more than 50 years of experience in the industry, SLN Murthy's passion grew towards helping businesses thrive, guiding successful startups, and contributing to the growing ecosystem. Currently, SLN Murthy sits on the advisory board of a thriving company and serves as the CEO of a couple of other ventures in the semiconductor sector. He's also actively involved in guest lecturing at universities, sharing his knowledge about Signal Integrity and educating young minds.
+                </section>
+
+                <section class="about-section-two">
+                    <div class="about-core-value-img" data-scroll></div>
+                    <div class="about-section-stwo-content">
+                        <h3 class="font-2" data-scroll data-scroll-speed=".08">Core Values</h3>
+                        <div class="row pt-1">
+                            <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".11">
+                                <div class="icon-container">
+                                    <svg class="ic-40">
+                                        <use xlink:href="img/icon_sprite.svg#ic-excellence" />
+                                    </svg>
+                                </div>
+                                <h5 class="pt-3">Excellence</h5>
+                                <p class="pt-1">We are committed in delivering packaging
+                                    solutions of highest quality and standards. Fuel
+                                    growth, innovation and industry leadership,
+                                    both internally and in stakeholder interactions.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".14">
+                                <div class="icon-container">
+                                    <svg class="ic-40">
+                                        <use xlink:href="img/icon_sprite.svg#ic-integrity" />
+                                    </svg>
+                                </div>
+                                <h5 class="pt-3">Integrity</h5>
+                                <p class="pt-1">We believe in unwavering honesty, ethics, and
+                                    consistency in actions. We keep transparency
+                                    and communication at the forefront throughout
+                                    our engagement, to form a foundation for
+                                    credibility and trust.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".18">
+                                <div class="icon-container">
+                                    <svg class="ic-40">
+                                        <use xlink:href="img/icon_sprite.svg#ic-growth" />
+                                    </svg>
+                                </div>
+                                <h5 class="pt-3">Growth</h5>
+                                <p class="pt-1">We are dedicated to continuous learning,
+                                    development, and expansion. We encourage
+                                    adaptability, innovation and
+                                    personal/professional advancement and invest
+                                    in long-term success of our enterprise and the
+                                    ecosystem partners.
+                                </p>
+                            </div>
+                            <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".14">
+                                <div class="icon-container">
+                                    <svg class="ic-40">
+                                        <use xlink:href="img/icon_sprite.svg#ic-impact" />
+                                    </svg>
+                                </div>
+                                <h5 class="pt-3">Impact</h5>
+                                <p class="pt-1">We are driven towards making meaningful and
+                                    positive change to benefit stakeholders, society, and
+                                    the environment. Our resolute commitment revolves
+                                    around shaping the semiconductor packaging
+                                    ecosystem and enabling businesses to develop
+                                    leading-edge products.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-lg-3 py-4 position-relative">
-                            <img class="img-fluid s3-img-1 rounded-4" src="img/SLN-Murthy.png" alt="SLN Murthy">
-                            <img class="s3-dots-2" src="img/dots.svg" alt="image" data-scroll  data-scroll-speed=".2">
-                        </div>
                     </div>
-                </div>
-                <div class="w-max-1280 mx-auto">
-                    <h4 class="text-center pt-2 pt-lg-5 font-3 px-1 px-lg-4 lh-36 " data-scroll data-scroll-speed=".08">
-                        In recent years, Heterogeneous Integration and Advanced Packaging started to become prominent in the era of
-                        Chiplets, it became critical to drive the global semiconductor industry forward. Traditionally, package design
-                        was housed within OSATs or MNCs, it was then, Suresh and SLN Murthy decided to lead the way in advanced
-                        semiconductor packaging for India. That’s how Infinipack started its journey. Their goal was simple yet
-                        powerful: to create a hub that could nurture top-notch talent in advanced packaging and systems engineering,
-                        enriching the entire ecosystem.
-                    </h4>
-                </div>
-            </section>
-            <!-- /section-three -->
+                </section>
 
-            <section class="outer-wrapper bg-body">
-                <div class="container">
-                    <h1 class="font-2 text-center lp-n2" data-scroll data-scroll-speed=".09">
-                        Our Vision…
-                    </h1>
-                    <div class="row pb-5 pt-5">
-                        <div class="col-md-4 text-center" data-scroll data-scroll-speed=".1">
-                            <svg class="ic-100">
-                                <use xlink:href="img/icon_sprite.svg#ic-eye" />
-                            </svg>
-                            <h4 class="text-secondary pt-3">Vision</h4>
-                            <p class="pt-1 px-2">India’s pioneer in Advanced
-                                Semiconductor Packaging and
-                                Systems - Technology Development
-                                and Design Engineering; catalyzing
-                                businesses to develop leading-edge
-                                products.
-                            </p>
-                        </div>
-                        <div class="col-md-4 text-center" data-scroll data-scroll-speed=".14">
-                            <svg class="ic-100">
-                                <use xlink:href="img/icon_sprite.svg#ic-target" />
-                            </svg>
-                            <h4 class="text-secondary pt-3">Mission</h4>
-                            <p class="pt-1 px-2"> Collaborate from Architecture
-                                phase to accelerate Product
-                                Development, to deliver
-                                performance and cost optimal
-                                solutions to semiconductor and
-                                system companies.
-                            </p>
-                        </div>
-                        <div class="col-md-4 text-center" data-scroll data-scroll-speed=".18">
-                            <svg class="ic-100">
-                                <use xlink:href="img/icon_sprite.svg#ic-purpuse" />
-                            </svg>
-                            <h5 class="text-secondary pt-3">Purpose</h5>
-                            <p class="pt-1 px-2">
-                                A platform that empowers
-                                the ecosystem with
-                                world-class advanced
-                                packaging and systems
-                                engineering talent in the
-                                Chiplets era.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /section two -->
+                <section class="section-four outer-wrapper">
+                    <div class="container">
+                        <div class="row justify-content-between pt-5">
+                            <div class="col-lg-5 col-xl-5">
+                                <h2 class="font-2" data-scroll data-scroll-speed=".1">
+                                    <span class="fw-medium text-secondary display-5 lp-n3">Why choose us?</span> <br>
+                                    Semiconductor Packaging
+                                    <br> and Systems Solutions?
+                                </h2>
+                            </div>
+                            <div class="col-lg-7 col-xl-6 d-grid gap-4">
+                                <div class="row">
+                                    <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
+                                        data-scroll-speed=".1" delay="1">
+                                        <div class="icon-container">
+                                            <svg class="ic-40">
+                                                <use xlink:href="img/icon_sprite.svg#ic-1" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Unparalleled Expertise</h5>
+                                            <p class="text-gray-700">Our team of experts possesses comprehensive knowledge
+                                                of semiconductor and packaging technologies,
+                                                are dedicated to designing cutting-edge solutions, ensuring your devices
+                                                receive the best solutions.</p>
+                                        </div>
+                                    </div>
 
-            <section class="about-section-two">
-                <div class="about-core-value-img" data-scroll></div>
-                <div class="about-section-stwo-content">
-                    <h3 class="font-2" data-scroll data-scroll-speed=".08">Core Values</h3>
-                    <div class="row pt-1">
-                        <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".11">
-                            <div class="icon-container">
-                                <svg class="ic-40">
-                                    <use xlink:href="img/icon_sprite.svg#ic-excellence" />
-                                </svg>
-                            </div>
-                            <h5 class="pt-3">Excellence</h5>
-                            <p class="pt-1">We are committed in delivering packaging
-                                solutions of highest quality and standards. Fuel
-                                growth, innovation and industry leadership,
-                                both internally and in stakeholder interactions.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".14">
-                            <div class="icon-container">
-                                <svg class="ic-40">
-                                    <use xlink:href="img/icon_sprite.svg#ic-integrity" />
-                                </svg>
-                            </div>
-                            <h5 class="pt-3">Integrity</h5>
-                            <p class="pt-1">We believe in unwavering honesty, ethics, and
-                                consistency in actions. We keep transparency
-                                and communication at the forefront throughout
-                                our engagement, to form a foundation for
-                                credibility and trust.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".18">
-                            <div class="icon-container">
-                                <svg class="ic-40">
-                                    <use xlink:href="img/icon_sprite.svg#ic-growth" />
-                                </svg>
-                            </div>
-                            <h5 class="pt-3">Growth</h5>
-                            <p class="pt-1">We are dedicated to continuous learning,
-                                development, and expansion. We encourage
-                                adaptability, innovation and
-                                personal/professional advancement and invest
-                                in long-term success of our enterprise and the
-                                ecosystem partners.
-                            </p>
-                        </div>
-                        <div class="col-sm-6 text-start" data-scroll data-scroll-speed=".14">
-                            <div class="icon-container">
-                                <svg class="ic-40">
-                                    <use xlink:href="img/icon_sprite.svg#ic-impact" />
-                                </svg>
-                            </div>
-                            <h5 class="pt-3">Impact</h5>
-                            <p class="pt-1">We are driven towards making meaningful and
-                                positive change to benefit stakeholders, society, and
-                                the environment. Our resolute commitment revolves
-                                around shaping the semiconductor packaging
-                                ecosystem and enabling businesses to develop
-                                leading-edge products.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-four outer-wrapper">
-                <div class="container">
-                    <div class="row justify-content-between pt-5">
-                        <div class="col-lg-5 col-xl-5">
-                            <h2 class="font-2" data-scroll data-scroll-speed=".1">
-                                <span class="fw-medium text-secondary display-5 lp-n3">Why Choose us for you</span> <br>
-                                Semiconductor Packaging
-                                <br> and Systems Solutions?
-                            </h2>
-                        </div>
-                        <div class="col-lg-7 col-xl-6 d-grid gap-4">
-                            <div class="row">
-                                <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
-                                    data-scroll-speed=".1" delay="1">
-                                    <div class="icon-container">
-                                        <svg class="ic-40">
-                                            <use xlink:href="img/icon_sprite.svg#ic-1" />
-                                        </svg>
+                                    <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
+                                        data-scroll-speed=".12">
+                                        <div class="icon-container">
+                                            <svg class="ic-40">
+                                                <use xlink:href="img/icon_sprite.svg#ic-2" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Innovation at its Core</h5>
+                                            <p class="text-gray-700">
+                                                Our visionary approach and relentless pursuit of innovations drives us to
+                                                pursue technological breakthroughs,
+                                                enabling us to create truly remarkable products that redefine the future
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h5 class="fw-bold">Unparalleled Expertise</h5>
-                                        <p class="text-gray-700">Our team of experts possesses comprehensive knowledge
-                                            of semiconductor and packaging technologies,
-                                            are dedicated to designing cutting-edge solutions, ensuring your devices
-                                            receive the best solutions.</p>
+                                    <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
+                                        data-scroll-speed=".14">
+                                        <div class="icon-container">
+                                            <svg class="ic-40">
+                                                <use xlink:href="img/icon_sprite.svg#ic-3" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Commitment to Quality</h5>
+                                            <p class="text-gray-700">
+                                                We are committed to delivering products of the highest quality,
+                                                fostering lasting partnerships built on trust and performance.
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
-                                    data-scroll-speed=".12">
-                                    <div class="icon-container">
-                                        <svg class="ic-40">
-                                            <use xlink:href="img/icon_sprite.svg#ic-2" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold">Innovation at its Core</h5>
-                                        <p class="text-gray-700">
-                                            Our visionary approach and relentless pursuit of innovations drives us to
-                                            pursue technological breakthroughs,
-                                            enabling us to create truly remarkable products that redefine the future
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
-                                    data-scroll-speed=".14">
-                                    <div class="icon-container">
-                                        <svg class="ic-40">
-                                            <use xlink:href="img/icon_sprite.svg#ic-3" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold">Commitment to Quality</h5>
-                                        <p class="text-gray-700">
-                                            We are committed to delivering products of the highest quality,
-                                            fostering lasting partnerships built on trust and performance.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
-                                    data-scroll-speed=".16">
-                                    <div class="icon-container">
-                                        <svg class="ic-40">
-                                            <use xlink:href="img/icon_sprite.svg#ic-4" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold">Industry and University Partnership</h5>
-                                        <p class="text-gray-700">
-                                            We have access to fresh minds from leading universities brimming with
-                                            innovative ideas driving cutting edge research.
-                                            Our global industry partnership will bring in-depth market insights,
-                                            resources for efficient production and build
-                                            products which are innovative, practical and market-ready.
-                                        </p>
+                                    <div class="d-grid auto-fr gap-4 col-sm-12 col-md-6 col-lg-12" data-scroll
+                                        data-scroll-speed=".16">
+                                        <div class="icon-container">
+                                            <svg class="ic-40">
+                                                <use xlink:href="img/icon_sprite.svg#ic-4" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h5 class="fw-bold">Industry and University Partnership</h5>
+                                            <p class="text-gray-700">
+                                                We have access to fresh minds from leading universities brimming with
+                                                innovative ideas driving cutting edge research.
+                                                Our global industry partnership will bring in-depth market insights,
+                                                resources for efficient production and build
+                                                products which are innovative, practical and market-ready.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
-            <!-- /section-three -->
 
-            <section class="contact-section" id="Contact">
+            <section class="contact-section section" id="Contact">
                 <div class="contact-img" style="background-image: url(img/contact-banner.png);"></div>
                 <div class="contact-content">
                     <h4 class="text-left">
@@ -442,7 +465,7 @@
                             <div>
                                 <span class="text-dark fw-bold">Design Centre</span>
                                 <h6 class="text-left font-2 lh-26">
-                                    Kalyani Magnum Tech Park, 6th Floor,<br> Block 1, J P Nagar 7th Phase,<br> Bengaluru, Karnataka 560078
+                                    Kalyani Magnum Tech Park, 6th Floor,<br> Block 2, J P Nagar 7th Phase,<br> Bengaluru, Karnataka 560078
                                 </h6>
                             </div>
                         </div>
@@ -483,20 +506,16 @@
                                 packaging solutions can elevate your products to new heights.
                                 Let us be the catalyst for your success in the world of electronics.
                             </h6>
-                            <a href="contact.html" class="btn btn-light px-4 rounded-5 py-2 fw-medium">Become a Client</a>
                         </div>
                         <img src="img/contact-panel.png" alt="">
                     </div>
                 </div>
                 <div class="container text-center">
-                    <div class="w-max-900 mx-auto">
-                        <h1 class="font-2 text-light fw-light" data-scroll data-scroll-speed=".1">
-                            Industry Pioneers in Advanced <span class="text-primary"></span>Semiconductor Packaging and Systems Engineering </span>
-                        </h1>
-                        <h6 class="text-light fw-light p-2 px-lg-5 lh-28" data-scroll data-scroll-speed=".1">
-                            We invite you to embark on a journey of excellence with us as we revolutionize semiconductor packaging to shape a better, more
-                            connected tomorrow.
-                        </h6>
+                    <div class="w-max-1200 mx-auto">
+                        <h2 class="font-2 text-light fw-lighter" data-scroll data-scroll-speed=".1">
+                            We invite you to embark on a journey of excellence with us as we revolutionize <br> <span class="text-primary">semiconductor packaging to shape a better, more
+                                connected tomorrow.</span>
+                        </h2>
                     </div>
 
                     <div class="d-grid footer-logo justify-items-center pt-3" data-scroll data-scroll-speed=".1">
@@ -504,7 +523,7 @@
                     </div>
 
                     <div class="row pt-5 mt-3 mt-lg-5 align-items-center">
-                        <div class="f-15 text-light">infinipack LTD 2023</div>
+                        <div class="f-15 text-light">infinipack 2023</div>
                     </div>
                 </div>
             </footer>
@@ -528,39 +547,38 @@
             const navLinks = document.querySelectorAll('.nav-link');
             const sections = document.querySelectorAll('.section');
 
-            // Function to scroll to a specific section
             const scrollToSection = (sectionId) => {
                 const section = document.getElementById(sectionId);
                 if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
+                    section.scrollIntoView({ behavior: 'smooth' });
                 }
             };
 
-            // Attach click event listeners to navigation links
             navLinks.forEach(navLink => {
                 navLink.addEventListener('click', event => {
-                event.preventDefault(); // Prevent default link behavior
-                const sectionId = navLink.getAttribute('href').substring(1);
-                scrollToSection(sectionId);
+                    event.preventDefault();
+                    const sectionId = navLink.getAttribute('href').substring(1);
+                    scrollToSection(sectionId);
                 });
             });
 
-            // Change active menu link on scroll
-            window.addEventListener('scroll', () => {
+            const adjustActiveLink = () => {
                 sections.forEach(section => {
-                const sectionTop = section.offsetTop - 50; // Adjust this value based on your design
-                const sectionId = section.getAttribute('id');
-                const currentNavLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-
-                if (window.scrollY >= sectionTop) {
-                    // Remove 'active' class from all nav links
-                    navLinks.forEach(navLink => navLink.classList.remove('active'));
-
-                    // Add 'active' class to the current nav link
-                    currentNavLink.classList.add('active');
-                }
+                    const boundingRect = section.getBoundingClientRect();
+                    if (boundingRect.top <= 100 && boundingRect.bottom >= 100) {
+                        const sectionId = section.getAttribute('id');
+                        navLinks.forEach(navLink => {
+                            navLink.classList.remove('active');
+                            if (navLink.getAttribute('href') === `#${sectionId}`) {
+                                navLink.classList.add('active');
+                            }
+                        });
+                    }
                 });
-            });
+            };
+
+            window.addEventListener('scroll', adjustActiveLink);
+            window.addEventListener('resize', adjustActiveLink);
         });
     </script>
 </body>
