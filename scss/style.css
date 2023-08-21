@@ -25,6 +25,10 @@ body {
   gap: 32px;
   padding: 12px var(--outer-padding);
 }
+.main-header.career {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
 
 .menu {
   padding: 0;
@@ -1130,6 +1134,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 
 .text-gray-700 {
   color: var(--bs-gray-700);
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .rounded-pills.sm .nav-link {
