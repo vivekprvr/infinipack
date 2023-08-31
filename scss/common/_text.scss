@@ -53,6 +53,19 @@
     white-space: normal;
 }
 
+.text-four-line {
+    line-height: 2rem;
+    font-weight: 500;
+    max-height: 8rem;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    display: box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
 .slide-left {
     animation: slide-left 20s linear infinite;
 }
